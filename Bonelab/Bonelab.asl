@@ -6,6 +6,11 @@ state("BONELAB_Steam_Windows64", "Steam v1.10")
     int loadingCheck : "UnityPlayer.dll", 0x1A01CA4; // checking for value 32762 and 32763
 }
 
+state("BONELAB_Oculus_Windows64", "Oculus v1.10")
+{
+    int loadingCheck : "UnityPlayer.dll", 0x1A01CA4; // checking for value 32762 and 32763
+}
+
 // loading 32762, 32763
 
 init
@@ -15,9 +20,9 @@ init
         case 675840: 
             version = "Steam v1.10";
             break;
-		default:
-			print("Unknown version detected");
-			return false;
+	default:
+	    print("Unknown version detected");
+	    return false;
     }
 }
 
