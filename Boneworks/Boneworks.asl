@@ -8,11 +8,11 @@
 //	loadingCheck value instructions
 //	Open Cheat Engine, select BONEWORKS.exe process, select vrclient_x64.dll under Memory Scan Options, First Scan for 0, 
 //	Next Scan for 1 during a level load, add the address to address list, pointer scan for this address, 
-//	set Max Level to 2 and hit OK, find offsets 8 and D84, adjust loadingCheck address with the new base address
+//	set Max Level to 2 and hit OK, find address beginning with 0044, adjust loadingCheck address with the new base address
 
 state("BONEWORKS"){	//levelNumber should always be accurate, loadingCheck will need to be updated with new SteamVR versions
 	int levelNumber : "GameAssembly.dll", 0x01E7E4E0, 0xB8, 0x590;
-	int loadingCheck : "vrclient_x64.dll", 0x00441E18, 0x8, 0xD84;
+	int loadingCheck : "vrclient_x64.dll", 0x0044AC10, 0xD8, 0xC54;
 }
 
 init{
