@@ -12,7 +12,7 @@
 
 state("BONEWORKS"){	//levelNumber should always be accurate, loadingCheck will need to be updated with new SteamVR versions
 	int levelNumber : "GameAssembly.dll", 0x01E7E4E0, 0xB8, 0x590;
-	int loadingCheck : "vrclient_x64.dll", 0x00443198, 0x8, 0xD84;
+	int loadingCheck : "vrclient_x64.dll", 0x00456A28, 0x8, 0xD84;
 }
 
 init{
