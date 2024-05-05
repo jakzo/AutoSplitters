@@ -1,4 +1,4 @@
-//	Autosplitter created by Radioactiv03 and Sychke, currently maintained by Sychke
+//	Autosplitter created by Jakz0 and Sychke
 //	Boneworks Speedrunning Discord Server: https://discord.gg/MW2zUcV2Fv
 
 //	levelNumber is the ID of the current level
@@ -43,8 +43,6 @@ start{
 	}
 }
 
-//THIS CODE COULD PROBABLY BE CLEANED UP CONSIDERABLY TO ACCOMPLISH THE SAME THING
-//ITS FUNCTIONAL, IT'S AN AUTOSPLITTER, WHO CARES, I DON'T, I'M LEAVING IT THE SAME AS BEFORE
 split{
 	//Checks if the new levelNumber is greater than the old levelNumber
 	if (current.levelNumber > old.levelNumber){
